@@ -1,0 +1,61 @@
+.menu ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: ghostwhite;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.5s;
+}
+
+.menu ul li:hover:after{
+    width: 100%;
+}
+
+{
+	background-color: #f7f7f7;
+	padding: 40px;
+	text-align: center;
+}
+
+ h2 {
+	margin-bottom: 10px;
+}
+ ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	margin-bottom: 10px;
+}
+
+ a {
+	text-decoration: none;
+	color: #4CAF50;
+}
+
+ form {
+	margin-top: 20px;
+}
+
+ input,  textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #ddd;
+}
+
+ button {
+	background-color: #4CAF50;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+}
+
+ button:hover {
+	background-color: #3e8e41;
+}

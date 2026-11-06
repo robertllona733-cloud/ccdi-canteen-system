@@ -1,0 +1,205 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+
+}
+
+body{
+  background-color: #d2691e;
+}
+
+
+.menu{
+  width: 100%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+  background-image: url('SIOMAI3.avif');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  
+}
+.h{
+color:#ffffff ;
+
+}
+
+.can{
+ color: white;
+}
+.menu ul li{
+  list-style: none;
+  display: inline-table;
+  margin: 0 20px;
+  position: relative;
+}
+.menu ul li a{
+  text-decoration: none;
+  color: aliceblue;
+  text-transform: uppercase;
+}
+
+.menu ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: ghostwhite;
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  transition: 0.5s;
+}
+
+.menu ul li:hover:after{
+  width: 100%;
+}
+
+.item{
+  display: grid;
+  position: relative;
+  grid-template-rows: auto 1fr;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgb(0,0,0,0,6);
+  transition: .2 ease-in-out;
+}
+
+.item img{
+  position: relative;
+
+  height: 200px;
+  border-radius: 15px 15px 0 0;
+  cursor: pointer;
+}
+
+
+
+.menu-container {
+  width: 30%;
+  max-width: 50%;
+  margin: 40px auto;
+  
+  padding: 20px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.menu-card {
+  background-color: #fffaf3;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.menu-card img {
+  width: 100%;
+  height: 300px;
+  object-fit:cover;
+}
+
+.menu-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.menu-info h2 {
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0 5px;
+}
+
+.price {
+  font-size: 16px;
+  color: #d2691e;
+  font-weight: bold;
+}
+
+.fun-btn {
+  padding: 14px 30px;
+  font-size: 18px;
+  background: #ff4747;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.15s ease;
+}
+
+.fun-btn:hover {
+  transform: scale(1.08);
+}
+
+.fun-btn:active {
+  transform: scale(0.95);
+}
+
+button{
+ padding: 14px 30px;
+  font-size: 18px;
+  background: #d2691e;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.15s ease;
+
+}
+
+button:hover{
+  transform: scale(1.08);
+}
+
+button:active{
+transform: scale(0.95);
+}
+
+
+a{
+  text-decoration: none;
+}
+
+input {
+  width: 60px;
+  padding: 8px;
+  font-size: 18px;
+  text-align: center;
+  border: 2px solid #ffa54a;
+  border-radius: 8px;
+  outline: none;
+}
+
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input {
+  -moz-appearance: textfield;
+}
